@@ -1,0 +1,162 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <!--<RuntimeIdentifier>cosmos</RuntimeIdentifier>-->
+        <Platform>cosmos</Platform>
+        <SupportsX86Intrinsics>false</SupportsX86Intrinsics>
+        <SelfContained>True</SelfContained>
+        <BinFormat>Elf</BinFormat>
+        <StackCorruptionDetectionEnabled>True</StackCorruptionDetectionEnabled>
+        <StackCorruptionDetectionLevel>MethodFooters</StackCorruptionDetectionLevel>
+        <Deployment>ISO</Deployment>
+        <DebugEnabled>False</DebugEnabled>
+        <DebugMode>Source</DebugMode>
+        <IgnoreDebugStubAttribute>False</IgnoreDebugStubAttribute>
+        <ISOFile>bin\Debug\net5.0\WaveOS.iso</ISOFile>
+        <CompileVBEMultiboot>False</CompileVBEMultiboot>
+        <ExtractMapFile>False</ExtractMapFile>
+        <VMware_StackCorruptionDetectionEnabled>True</VMware_StackCorruptionDetectionEnabled>
+        <VMware_StackCorruptionDetectionLevel>MethodFooters</VMware_StackCorruptionDetectionLevel>
+        <VMware_Description>Use VMware Player or Workstation to deploy and debug.</VMware_Description>
+        <VMware_Deployment>ISO</VMware_Deployment>
+        <VMware_Launch>VMware</VMware_Launch>
+        <VMware_DebugEnabled>True</VMware_DebugEnabled>
+        <VMware_DebugMode>Source</VMware_DebugMode>
+        <VMware_IgnoreDebugStubAttribute>False</VMware_IgnoreDebugStubAttribute>
+        <VMware_CosmosDebugPort>Serial: COM1</VMware_CosmosDebugPort>
+        <VMware_VisualStudioDebugPort>Pipe: Cosmos\Serial</VMware_VisualStudioDebugPort>
+        <VMware_PxeInterface>192.168.0.8</VMware_PxeInterface>
+        <VMware_EnableGDB>False</VMware_EnableGDB>
+        <VMware_StartCosmosGDB>False</VMware_StartCosmosGDB>
+        <VMware_ISOFile>bin\Debug\net5.0\WaveOS.iso</VMware_ISOFile>
+        <VMware_CompileVBEMultiboot>False</VMware_CompileVBEMultiboot>
+        <VMware_ExtractMapFile>False</VMware_ExtractMapFile>
+        <USB_StackCorruptionDetectionEnabled>True</USB_StackCorruptionDetectionEnabled>
+        <USB_StackCorruptionDetectionLevel>MethodFooters</USB_StackCorruptionDetectionLevel>
+        <USB_Description>Makes a USB device such as a flash drive or external hard disk bootable.</USB_Description>
+        <USB_Deployment>USB</USB_Deployment>
+        <USB_Launch>None</USB_Launch>
+        <USB_DebugEnabled>False</USB_DebugEnabled>
+        <USB_DebugMode>Source</USB_DebugMode>
+        <USB_IgnoreDebugStubAttribute>False</USB_IgnoreDebugStubAttribute>
+        <USB_CosmosDebugPort>Serial: COM1</USB_CosmosDebugPort>
+        <USB_VisualStudioDebugPort>Pipe: Cosmos\Serial</USB_VisualStudioDebugPort>
+        <USB_PxeInterface>192.168.0.8</USB_PxeInterface>
+        <USB_EnableGDB>False</USB_EnableGDB>
+        <USB_StartCosmosGDB>False</USB_StartCosmosGDB>
+        <USB_ISOFile>bin\Debug\net5.0\WaveOS.iso</USB_ISOFile>
+        <USB_CompileVBEMultiboot>False</USB_CompileVBEMultiboot>
+        <USB_ExtractMapFile>False</USB_ExtractMapFile>
+        <PXE_StackCorruptionDetectionEnabled>True</PXE_StackCorruptionDetectionEnabled>
+        <PXE_StackCorruptionDetectionLevel>MethodFooters</PXE_StackCorruptionDetectionLevel>
+        <PXE_Description>Creates a PXE setup and hosts a DCHP and TFTP server to deploy directly to physical hardware. Allows debugging with a serial cable.</PXE_Description>
+        <PXE_Deployment>PXE</PXE_Deployment>
+        <PXE_Launch>None</PXE_Launch>
+        <PXE_DebugEnabled>False</PXE_DebugEnabled>
+        <PXE_DebugMode>Source</PXE_DebugMode>
+        <PXE_IgnoreDebugStubAttribute>False</PXE_IgnoreDebugStubAttribute>
+        <PXE_CosmosDebugPort>Serial: COM1</PXE_CosmosDebugPort>
+        <PXE_VisualStudioDebugPort>Pipe: Cosmos\Serial</PXE_VisualStudioDebugPort>
+        <PXE_PxeInterface>192.168.0.8</PXE_PxeInterface>
+        <PXE_EnableGDB>False</PXE_EnableGDB>
+        <PXE_StartCosmosGDB>False</PXE_StartCosmosGDB>
+        <PXE_ISOFile>bin\Debug\net5.0\WaveOS.iso</PXE_ISOFile>
+        <PXE_CompileVBEMultiboot>False</PXE_CompileVBEMultiboot>
+        <PXE_ExtractMapFile>False</PXE_ExtractMapFile>
+        <Name>ISO User 001</Name>
+        <User001_StackCorruptionDetectionEnabled>True</User001_StackCorruptionDetectionEnabled>
+        <User001_StackCorruptionDetectionLevel>MethodFooters</User001_StackCorruptionDetectionLevel>
+        <User001_Name>ISO User 001</User001_Name>
+        <User001_Deployment>ISO</User001_Deployment>
+        <User001_Launch>None</User001_Launch>
+        <User001_DebugEnabled>False</User001_DebugEnabled>
+        <User001_DebugMode>Source</User001_DebugMode>
+        <User001_IgnoreDebugStubAttribute>False</User001_IgnoreDebugStubAttribute>
+        <User001_CosmosDebugPort>Serial: COM1</User001_CosmosDebugPort>
+        <User001_VisualStudioDebugPort>Pipe: Cosmos\Serial</User001_VisualStudioDebugPort>
+        <User001_PxeInterface>192.168.0.8</User001_PxeInterface>
+        <User001_EnableGDB>False</User001_EnableGDB>
+        <User001_StartCosmosGDB>False</User001_StartCosmosGDB>
+        <User001_ISOFile>bin\Debug\net5.0\WaveOS.iso</User001_ISOFile>
+        <User001_CompileVBEMultiboot>False</User001_CompileVBEMultiboot>
+        <User001_ExtractMapFile>False</User001_ExtractMapFile>
+        <ISO_StackCorruptionDetectionEnabled>True</ISO_StackCorruptionDetectionEnabled>
+        <ISO_StackCorruptionDetectionLevel>MethodFooters</ISO_StackCorruptionDetectionLevel>
+        <ISO_Name>ISO User 001</ISO_Name>
+        <ISO_Deployment>ISO</ISO_Deployment>
+        <ISO_Launch>None</ISO_Launch>
+        <ISO_DebugEnabled>True</ISO_DebugEnabled>
+        <ISO_DebugMode>Source</ISO_DebugMode>
+        <ISO_IgnoreDebugStubAttribute>False</ISO_IgnoreDebugStubAttribute>
+        <ISO_CosmosDebugPort>Serial: COM1</ISO_CosmosDebugPort>
+        <ISO_VisualStudioDebugPort>Pipe: Cosmos\Serial</ISO_VisualStudioDebugPort>
+        <ISO_PxeInterface>192.168.0.8</ISO_PxeInterface>
+        <ISO_EnableGDB>False</ISO_EnableGDB>
+        <ISO_StartCosmosGDB>False</ISO_StartCosmosGDB>
+        <ISO_ISOFile>bin\Debug\net5.0\WaveOS.iso</ISO_ISOFile>
+        <ISO_CompileVBEMultiboot>False</ISO_CompileVBEMultiboot>
+        <ISO_ExtractMapFile>False</ISO_ExtractMapFile>
+        <VMware_Name>VMware User 002</VMware_Name>
+        <User001_Description>Use VMware Player or Workstation to deploy and debug.</User001_Description>
+        <User002_StackCorruptionDetectionEnabled>True</User002_StackCorruptionDetectionEnabled>
+        <User002_StackCorruptionDetectionLevel>MethodFooters</User002_StackCorruptionDetectionLevel>
+        <User002_Name>VMware User 002</User002_Name>
+        <User002_Deployment>ISO</User002_Deployment>
+        <User002_Launch>VMware</User002_Launch>
+        <User002_DebugEnabled>False</User002_DebugEnabled>
+        <User002_DebugMode>Source</User002_DebugMode>
+        <User002_IgnoreDebugStubAttribute>False</User002_IgnoreDebugStubAttribute>
+        <User002_CosmosDebugPort>Serial: COM1</User002_CosmosDebugPort>
+        <User002_VisualStudioDebugPort>Pipe: Cosmos\Serial</User002_VisualStudioDebugPort>
+        <User002_PxeInterface>192.168.0.8</User002_PxeInterface>
+        <User002_EnableGDB>False</User002_EnableGDB>
+        <User002_StartCosmosGDB>False</User002_StartCosmosGDB>
+        <User002_ISOFile>bin\Debug\net5.0\WaveOS.iso</User002_ISOFile>
+        <User002_CompileVBEMultiboot>False</User002_CompileVBEMultiboot>
+        <User002_ExtractMapFile>False</User002_ExtractMapFile>
+        <PXE_Name>VMware User 002</PXE_Name>
+        <User002_Description>Use VMware Player or Workstation to deploy and debug.</User002_Description>
+        <USB_Name>VMware User 002</USB_Name>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <EnableGDB>False</EnableGDB>
+        <StartCosmosGDB>False</StartCosmosGDB>
+        <VisualStudioDebugPort>Pipe: Cosmos\Serial</VisualStudioDebugPort>
+        <CosmosDebugPort>Serial: COM1</CosmosDebugPort>
+        <Launch>None</Launch>
+        <Profile>User001</Profile>
+        <Description>Use VMware Player or Workstation to deploy and debug.</Description>
+        <PxeInterface>192.168.0.8</PxeInterface>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+      <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="Assets\Cursor.bmp" />
+      <None Remove="Assets\Cursor3.bmp" />
+      <None Remove="Assets\Wallpaper.bmp" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="Assets\Cursor.bmp" />
+      <EmbeddedResource Include="Assets\Cursor3.bmp" />
+      <EmbeddedResource Include="Assets\Wallpaper.bmp" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Cosmos.Build" Version="0-*" NoWarn="NU1604" />
+        <PackageReference Include="Cosmos.Debug.Kernel" Version="0-*" NoWarn="NU1604" />
+        <PackageReference Include="Cosmos.System2" Version="0-*" NoWarn="NU1604" />
+        <PackageReference Include="Figgle" Version="0.4.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Assets\Taskbar\StartMenu\" />
+      <Folder Include="Properties\" />
+    </ItemGroup>
+
+</Project>
